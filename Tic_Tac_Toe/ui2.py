@@ -29,7 +29,10 @@ class Tic_Tac_Toe:
             elif self.turn == self.you:
                 row = input('row > ')
                 col = input('col > ')
-                if self.board[int(row)][int(col)] == ' ':
+                if int(row) > 2 or int(col) > 2:
+                    print('Invalid move!')
+                    print('Numbers must be 0, 1 or 2.')
+                elif self.board[int(row)][int(col)] == ' ':
                     move = f'{row}, {col}'
                     client.send(move.encode())
                     self.apply_move(row, col, self.turn)

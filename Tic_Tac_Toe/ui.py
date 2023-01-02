@@ -98,19 +98,6 @@ class Tic_Tac_Toe:
         print()
 
 
-
-
-    #while end in False:
-
-      #  if turn == you
-        #msg = 'Olá mundo'
-        #client.send(msg.encode())
-        #data = client.recv(2048)
-        #if data:
-        #    print(data.decode('utf-8'))
-        #client.close()
-
-
 game = Tic_Tac_Toe()
 game.host_game('localhost', 8974)
 

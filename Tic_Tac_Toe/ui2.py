@@ -96,12 +96,5 @@ class Tic_Tac_Toe:
         print()
 
 
-#client.send('Que mundão'.encode())
-        #msg = client.recv(2048)
-        #if msg:
-        #    print(msg.decode('utf-8'))
-        #client.close()
-
-
 game = Tic_Tac_Toe()
 game.connect_to_game('localhost', 8974)
